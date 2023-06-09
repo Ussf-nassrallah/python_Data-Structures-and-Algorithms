@@ -8,7 +8,26 @@ TASK-0: Write a function that prints all integers of a list.
     - You have to use str.format() to print integers
 """
 
+
 def print_list_integer(my_list=[]):
     n = len(my_list)
     for index in range(0,n):
         print("{}".format(my_list[index]))
+
+
+"""
+TASK-1: Write a function that retrieves an element from a list like in C.
+    -Prototype: def element_at(my_list, idx):
+    -If idx is negative, the function should return None
+    -If idx is out of range (> of number of element in my_list), the function should return None
+    -You are not allowed to import any module
+    -You are not allowed to use try/except
+"""
+
+
+def element_at(my_list, idx):
+    n = len(my_list)
+    if idx < 0 or idx > n - 1:
+        return None
+    else:
+        return my_list[idx]
