@@ -31,3 +31,22 @@ def element_at(my_list, idx):
         return None
     else:
         return my_list[idx]
+
+
+"""
+TASK-2: Write a function that replaces an element of a list at a specific position (like in C).
+    - Prototype: def replace_in_list(my_list, idx, element):
+    - If idx is negative, the function should not modify anything, and returns the original list
+    - If idx is out of range (> of number of element in my_list), the function should not modify anything, and returns the original list
+    - You are not allowed to import any module
+    - You are not allowed to use try/except
+"""
+
+
+def replace_in_list(my_list, idx, new_element):
+    n = len(my_list)
+    if idx < 0 or idx > n - 1:
+        return my_list
+    else:
+        my_list[idx] = new_element
+        return my_list
