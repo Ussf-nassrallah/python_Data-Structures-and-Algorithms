@@ -67,3 +67,23 @@ def print_reversed_list_integer(my_list=[]):
     n = len(my_list)
     for index in range(0, n):
         print("{}".format(my_list[(n - 1) - index]))
+
+
+"""
+Task-4 : Write a function that replaces an element in a list at a specific position without modifying the original list
+    -Prototype: def new_in_list(my_list, idx, element):
+    -If idx is negative, the function should return a copy of the original list
+    -If idx is out of range (> of number of element in my_list), the function should return a copy of the original list
+    -You are not allowed to import any module
+    -You are not allowed to use try/except
+"""
+
+
+def new_in_list(my_list, idx, element):
+    n = len(my_list)
+    if idx < 0 or idx > n - 1:
+        return my_list
+    else:
+        new_list = my_list[:n]
+        new_list[idx] = element
+        return new_list
