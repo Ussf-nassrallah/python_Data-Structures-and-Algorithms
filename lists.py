@@ -87,3 +87,21 @@ def new_in_list(my_list, idx, element):
         new_list = my_list[:n]
         new_list[idx] = element
         return new_list
+
+"""
+Task-5 - Write a function that removes all characters c and C from a string.
+    -Prototype: def no_c(my_string):
+    -The function should return the new string
+    -You are not allowed to import any module
+    -You are not allowed to use str.replace()
+"""
+
+
+def no_c(my_string):
+    str_len = len(my_string)
+    new_string = ""
+    for index in range(0, str_len):
+        if my_string[index] != 'c' and my_string[index] != 'C':
+            new_string += my_string[index]
+    return new_string
+

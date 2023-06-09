@@ -19,15 +19,15 @@ idx = 3
 # print_reversed_list_integer(my_list)
 
 # TASK-4
-# second_list = new_in_list(my_list, idx, new_element)
-
+# my_list = [1, 2, 3, 4, 5]
+# idx = 3
+# new_element = 9
+# new_list = new_in_list(my_list, idx, new_element)
+#
+# print(new_list)
 # print(my_list)
-# print(second_list)
 
-my_list = [1, 2, 3, 4, 5]
-idx = 3
-new_element = 9
-new_list = new_in_list(my_list, idx, new_element)
-
-print(new_list)
-print(my_list)
+# Task-5
+print(no_c("Best School"))
+print(no_c("Chicago"))
+print(no_c("C is fun!"))
