@@ -28,6 +28,17 @@ idx = 3
 # print(my_list)
 
 # Task-5
-print(no_c("Best School"))
-print(no_c("Chicago"))
-print(no_c("C is fun!"))
+# print(no_c("Best School"))
+# print(no_c("Chicago"))
+# print(no_c("C is fun!"))
+
+# Task-6
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print_matrix_integer(matrix)
+print("--")
+print_matrix_integer()

@@ -106,3 +106,20 @@ def no_c(my_string):
             new_string += my_string[index]
     return new_string
 
+
+"""
+Task-6: Write a function that prints a matrix of integers.
+    -Prototype: def print_matrix_integer(matrix=[[]]):
+    -Format: see example
+    -You are not allowed to import any module
+    -You can assume that the list only contains integers
+    -You are not allowed to cast integers into strings
+    -You have to use str.format() to print integers
+"""
+
+
+def print_matrix_integer(matrix=[[]]):
+    for inner_list in matrix:
+        for child_list in inner_list:
+            print("{:d}".format(child_list), end=" ")
+        print()
