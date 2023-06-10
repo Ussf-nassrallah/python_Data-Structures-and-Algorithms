@@ -120,6 +120,9 @@ Task-6: Write a function that prints a matrix of integers.
 
 def print_matrix_integer(matrix=[[]]):
     for inner_list in matrix:
-        for child_list in inner_list:
-            print("{:d}".format(child_list), end=" ")
+        for ele in inner_list:
+            if ele == inner_list[-1]:
+                print("{:d}".format(ele), end="")
+            else:
+                print("{:d}".format(ele), end=" ")
         print()
