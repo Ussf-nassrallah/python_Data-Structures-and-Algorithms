@@ -12,7 +12,7 @@ TASK-0: Write a function that prints all integers of a list.
 def print_list_integer(my_list=[]):
     n = len(my_list)
     for index in range(0,n):
-        print("{}".format(my_list[index]))
+        print("{:d}".format(my_list[index]))
 
 
 """
@@ -64,9 +64,10 @@ Task-3 : Write a function that prints all integers of a list, in reverse order.
 
 
 def print_reversed_list_integer(my_list=[]):
-    n = len(my_list)
-    for index in range(0, n):
-        print("{}".format(my_list[(n - 1) - index]))
+    if isinstance(my_list, list):
+        n = len(my_list)
+        for index in range(0, n):
+            print("{:d}".format(my_list[(n - 1) - index]))
 
 
 """
