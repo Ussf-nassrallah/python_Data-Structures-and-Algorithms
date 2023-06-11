@@ -58,6 +58,15 @@ idx = 3
 # print("Length: {:d} - First character: {}".format(length, first))
 
 # Task-9
-my_list = []
-max_value = max_integer(my_list)
-print("Max: {}".format(max_value))
+# my_list = []
+# max_value = max_integer(my_list)
+# print("Max: {}".format(max_value))
+
+# Task-10
+my_list = [0, 1, 2, 3, 4, 5, 6]
+list_result = divisible_by_2(my_list)
+
+i = 0
+while i < len(list_result):
+    print("{:d} {:s} divisible by 2".format(my_list[i], "is" if list_result[i] else "is not"))
+    i += 1

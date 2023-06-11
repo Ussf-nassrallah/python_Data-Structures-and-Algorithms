@@ -186,3 +186,23 @@ def max_integer(my_list=[]):
         n = len(my_list)
         my_list.sort()
         return my_list[n - 1]
+
+
+"""
+Task-10: Write a function that finds all multiples of 2 in a list.
+    -Prototype: def divisible_by_2(my_list=[]):
+    -Return a new list with True or False, depending on whether the integer at the same position in the original list is a multiple of 2
+    -The new list should have the same size as the original list
+    -You are not allowed to import any module
+"""
+
+
+def divisible_by_2(my_list=[]):
+    n = len(my_list)
+    output = []
+    for index in range(0, n):
+        if my_list[index] % 2 == 0:
+            output.append(True)
+        else:
+            output.append(False)
+    return output
