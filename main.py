@@ -33,12 +33,21 @@ idx = 3
 # print(no_c("C is fun!"))
 
 # Task-6
-matrix = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-]
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+#
+# print_matrix_integer(matrix)
+# print("--")
+# print_matrix_integer()
 
-print_matrix_integer(matrix)
-print("--")
-print_matrix_integer()
+# Task-7
+tuple_a = (1, 89)
+tuple_b = (88, 11)
+new_tuple = add_tuple(tuple_a, tuple_b)
+print(new_tuple)
+
+print(add_tuple(tuple_a, (1, )))
+print(add_tuple(tuple_a, ()))
