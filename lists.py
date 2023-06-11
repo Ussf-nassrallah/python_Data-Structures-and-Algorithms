@@ -150,3 +150,22 @@ def add_tuple(tuple_a=(), tuple_b=()):
     new_tuple = (a, b)
 
     return new_tuple
+
+
+"""
+Task-8: Write a function that finds the biggest integer of a list.
+    -Prototype: def max_integer(my_list=[]):
+    -If the list is empty, return None
+    -You can assume that the list only contains integers
+    -You are not allowed to import any module
+    -You are not allowed to use the builtin max()
+"""
+
+
+def multiple_returns(sentence):
+    n = len(sentence)
+    if sentence == "":
+        first_char = None
+    else:
+        first_char = sentence[0]
+    return (n, first_char)

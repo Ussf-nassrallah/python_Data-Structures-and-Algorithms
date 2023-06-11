@@ -44,10 +44,16 @@ idx = 3
 # print_matrix_integer()
 
 # Task-7
-tuple_a = (1, 89)
-tuple_b = (88, 11)
-new_tuple = add_tuple(tuple_a, tuple_b)
-print(new_tuple)
+# tuple_a = (1, 89)
+# tuple_b = (88, 11)
+# new_tuple = add_tuple(tuple_a, tuple_b)
+# print(new_tuple)
+#
+# print(add_tuple(tuple_a, (1, )))
+# print(add_tuple(tuple_a, ()))
 
-print(add_tuple(tuple_a, (1, )))
-print(add_tuple(tuple_a, ()))
+# Task-8
+
+sentence = "At school, I learnt C!"
+length, first = multiple_returns(sentence)
+print("Length: {:d} - First character: {}".format(length, first))
