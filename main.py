@@ -53,7 +53,11 @@ idx = 3
 # print(add_tuple(tuple_a, ()))
 
 # Task-8
+# sentence = "At school, I learnt C!"
+# length, first = multiple_returns(sentence)
+# print("Length: {:d} - First character: {}".format(length, first))
 
-sentence = "At school, I learnt C!"
-length, first = multiple_returns(sentence)
-print("Length: {:d} - First character: {}".format(length, first))
+# Task-9
+my_list = []
+max_value = max_integer(my_list)
+print("Max: {}".format(max_value))
