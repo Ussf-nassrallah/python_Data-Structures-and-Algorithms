@@ -206,3 +206,22 @@ def divisible_by_2(my_list=[]):
         else:
             output.append(False)
     return output
+
+
+"""
+Task-11: Write a function that deletes the item at a specific position in a list.
+    -Prototype: def delete_at(my_list=[], idx=0):
+    -If idx is negative or out of range, nothing change (returns the same list)
+    -You are not allowed to use pop()
+    -You are not allowed to import any module
+"""
+
+
+def delete_at(my_list=[], idx=0):
+    n = len(my_list)
+    if  idx < 0 or idx >= n:
+        return my_list
+    else:
+        del my_list[idx]
+        return my_list
+
